@@ -2,7 +2,7 @@
 //  DemoCocoaTouchFramework.h
 //  DemoCocoaTouchFramework
 //
-//  Created by 兒玉拓也 on 3/1/17.
+//  Created by kakueki61 on 3/1/17.
 //
 //
 

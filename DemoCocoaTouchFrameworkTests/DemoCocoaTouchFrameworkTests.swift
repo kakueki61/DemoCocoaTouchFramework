@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import DemoCocoaTouchFramework
+//@testable import DemoCocoaTouchFramework
 
 class DemoCocoaTouchFrameworkTests: XCTestCase {
     

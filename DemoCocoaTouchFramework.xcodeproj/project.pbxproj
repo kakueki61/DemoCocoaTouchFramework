@@ -10,6 +10,7 @@
 		5808B0561E66AD7A00187987 /* DemoCocoaTouchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5808B04C1E66AD7A00187987 /* DemoCocoaTouchFramework.framework */; };
 		5808B05B1E66AD7A00187987 /* DemoCocoaTouchFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5808B05A1E66AD7A00187987 /* DemoCocoaTouchFrameworkTests.swift */; };
 		5808B05D1E66AD7A00187987 /* DemoCocoaTouchFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5808B04F1E66AD7A00187987 /* DemoCocoaTouchFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5808B0671E66AE3A00187987 /* Hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5808B0661E66AE3A00187987 /* Hoge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		5808B0551E66AD7A00187987 /* DemoCocoaTouchFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoCocoaTouchFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5808B05A1E66AD7A00187987 /* DemoCocoaTouchFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCocoaTouchFrameworkTests.swift; sourceTree = "<group>"; };
 		5808B05C1E66AD7A00187987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5808B0661E66AE3A00187987 /* Hoge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hoge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				5808B04F1E66AD7A00187987 /* DemoCocoaTouchFramework.h */,
 				5808B0501E66AD7A00187987 /* Info.plist */,
+				5808B0661E66AE3A00187987 /* Hoge.swift */,
 			);
 			path = DemoCocoaTouchFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 					5808B04B1E66AD7A00187987 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = YJD3YQ6P48;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5808B0541E66AD7A00187987 = {
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5808B0671E66AE3A00187987 /* Hoge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +326,8 @@
 		5808B0611E66AD7A00187987 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YJD3YQ6P48;
@@ -333,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kakueki61.DemoCocoaTouchFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +348,8 @@
 		5808B0621E66AD7A00187987 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YJD3YQ6P48;
@@ -359,6 +369,7 @@
 		5808B0641E66AD7A00187987 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YJD3YQ6P48;
 				INFOPLIST_FILE = DemoCocoaTouchFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,6 +382,7 @@
 		5808B0651E66AD7A00187987 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YJD3YQ6P48;
 				INFOPLIST_FILE = DemoCocoaTouchFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
